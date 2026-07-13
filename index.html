@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Md Aminul Islam Rony — Data Scientist &amp; Software Engineer</title>
+<meta name="description" content="Portfolio of [Md Aminul Islam Rony] — Software Engineer transitioning into Data Science &amp; MLOps, M.Tech candidate at IIT Madras.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="rail" id="rail" aria-label="Page sections, styled as a pipeline run">
+  <div class="rail-head">
+    <span class="rail-dot"></span>
+    <span class="rail-head-text">run <span id="runId">#0417</span></span>
+  </div>
+  <ol class="rail-stages">
+    <li class="rail-stage" data-target="ingest"><span class="stage-index">01</span><span class="stage-name">ingest</span><span class="stage-status">queued</span></li>
+    <li class="rail-stage" data-target="transform"><span class="stage-index">02</span><span class="stage-name">transform</span><span class="stage-status">queued</span></li>
+    <li class="rail-stage" data-target="model"><span class="stage-index">03</span><span class="stage-name">model</span><span class="stage-status">queued</span></li>
+    <li class="rail-stage" data-target="deploy"><span class="stage-index">04</span><span class="stage-name">deploy</span><span class="stage-status">queued</span></li>
+    <li class="rail-stage" data-target="serve"><span class="stage-index">05</span><span class="stage-name">serve</span><span class="stage-status">queued</span></li>
+  </ol>
+</nav>
+
+<button class="rail-toggle" id="railToggle" aria-label="Toggle navigation" aria-expanded="false">
+  <span></span><span></span><span></span>
+</button>
+
+<main>
+
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <p class="eyebrow">M.Tech, Data Science &amp; AI — IIT Madras</p>
+      <h1 class="hero-title">
+        I build the software,<br>
+        then I make it <em>learn</em>.
+      </h1>
+      <p class="hero-sub">
+        Md Aminul Islam Rony — a software engineer retraining as a data scientist. Two years shipping
+        web products, now pointed at models, pipelines and the infrastructure that keeps them running.
+      </p>
+      <div class="hero-actions">
+        <a href="#model" class="btn btn-primary">View projects</a>
+        <a href="mailto:you@example.com" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="hero-console" aria-hidden="true">
+      <div class="console-bar">
+        <span class="console-dot red"></span><span class="console-dot amber"></span><span class="console-dot green"></span>
+        <span class="console-title">career.log</span>
+      </div>
+      <div class="console-body" id="consoleBody"></div>
+    </div>
+
+    <a class="scroll-cue" href="#ingest" aria-label="Scroll to next section">
+      <span>scroll</span>
+      <svg width="14" height="20" viewBox="0 0 14 20" fill="none"><path d="M1 1L7 19L13 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </section>
+
+  <!-- INGEST :: ABOUT -->
+  <section class="stage-section" id="ingest">
+    <div class="stage-header">
+      <span class="stage-tag">01 / ingest</span>
+      <h2>Where the data comes from</h2>
+      <p class="stage-desc">Background, education, and the raw material everything downstream is built on.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-copy">
+        <p>
+          I'm currently pursuing my <strong>M.Tech in Data Science and Artificial Intelligence at IIT Madras</strong>,
+          Before that, I completed my <strong>B.Tech in Computer Science and Engineering at KIIT, Bhubaneswar</strong>.
+        </p>
+        <p>
+          My path has run through full-stack web development and into MLOps — the plumbing that
+          takes a model from a notebook to something that actually serves predictions reliably.
+          Data science, for me, isn't just training a model; it's owning the whole pipeline
+          around it.
+        </p>
+        <p>
+          Outside of coursework, I care about writing systems that are boring in the best way:
+          reproducible, monitored, and easy to hand off.
+        </p>
+      </div>
+
+      <div class="about-record">
+        <div class="record-row">
+          <span class="record-key">degree</span>
+          <span class="record-val">M.Tech, Data Science &amp; AI</span>
+        </div>
+        <div class="record-row">
+          <span class="record-key">institute</span>
+          <span class="record-val">IIT Madras</span>
+        </div>
+        <div class="record-row">
+          <span class="record-key">status</span>
+          <span class="record-val record-live">in progress</span>
+        </div>
+        <div class="record-divider"></div>
+        <div class="record-row">
+          <span class="record-key">degree</span>
+          <span class="record-val">B.Tech, CSE</span>
+        </div>
+        <div class="record-row">
+          <span class="record-key">institute</span>
+          <span class="record-val">KIIT, Bhubaneswar</span>
+        </div>
+        <div class="record-row">
+          <span class="record-key">status</span>
+          <span class="record-val">completed</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRANSFORM :: SKILLS -->
+  <section class="stage-section stage-alt" id="transform">
+    <div class="stage-header">
+      <span class="stage-tag">02 / transform</span>
+      <h2>What gets applied to it</h2>
+      <p class="stage-desc">The languages, frameworks and tools I use to turn raw problems into working systems.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-block">
+        <h3>Data Science &amp; ML</h3>
+        <div class="chip-row">
+          <span class="chip">Python</span>
+          <span class="chip">Pandas / NumPy</span>
+          <span class="chip">scikit-learn</span>
+          <span class="chip">PyTorch</span>
+          <span class="chip">SQL</span>
+          <span class="chip">Statistics</span>
+        </div>
+      </div>
+      <div class="skill-block">
+        <h3>MLOps &amp; Infrastructure</h3>
+        <div class="chip-row">
+          <span class="chip">Docker</span>
+          <span class="chip">MLflow</span>
+          <span class="chip">CI/CD</span>
+          <span class="chip">Airflow</span>
+          <span class="chip">AWS</span>
+          <span class="chip">Model Monitoring</span>
+        </div>
+      </div>
+      <div class="skill-block">
+        <h3>Web Development</h3>
+        <div class="chip-row">
+          <span class="chip">JavaScript</span>
+          <span class="chip">React</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">REST APIs</span>
+          <span class="chip">HTML / CSS</span>
+          <span class="chip">Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODEL :: PROJECTS -->
+  <section class="stage-section" id="model">
+    <div class="stage-header">
+      <span class="stage-tag">03 / model</span>
+      <h2>What I've trained on real problems</h2>
+      <p class="stage-desc">A working set of projects across web development and MLOps.</p>
+    </div>
+
+    <div class="filter-row" role="tablist" aria-label="Filter projects">
+      <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">all</button>
+      <button class="filter-btn" data-filter="mlops" role="tab" aria-selected="false">mlops</button>
+      <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">web dev</button>
+    </div>
+
+    <div class="project-grid" id="projectGrid">
+
+      <article class="project-card" data-cat="mlops">
+        <div class="project-top">
+          <span class="project-cat">mlops</span>
+          <span class="project-status">deployed</span>
+        </div>
+        <h3>[Project name — e.g. End-to-End Model Deployment Pipeline]</h3>
+        <p>Automated training-to-serving pipeline with versioned datasets, experiment tracking, and a CI job that retrains on drift detection.</p>
+        <div class="chip-row small">
+          <span class="chip">Docker</span>
+          <span class="chip">MLflow</span>
+          <span class="chip">GitHub Actions</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="text-link">Code →</a>
+          <a href="#" class="text-link">Write-up →</a>
+        </div>
+      </article>
+
+      <article class="project-card" data-cat="mlops">
+        <div class="project-top">
+          <span class="project-cat">mlops</span>
+          <span class="project-status">deployed</span>
+        </div>
+        <h3>[Project name — e.g. Real-Time Model Monitoring Dashboard]</h3>
+        <p>Tracks prediction drift and latency for a production model, alerting when performance degrades below a threshold.</p>
+        <div class="chip-row small">
+          <span class="chip">Python</span>
+          <span class="chip">Grafana</span>
+          <span class="chip">AWS</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="text-link">Code →</a>
+          <a href="#" class="text-link">Write-up →</a>
+        </div>
+      </article>
+
+      <article class="project-card" data-cat="web">
+        <div class="project-top">
+          <span class="project-cat">web dev</span>
+          <span class="project-status">live</span>
+        </div>
+        <h3>[Project name — e.g. Full-Stack Booking Platform]</h3>
+        <p>A React and Node application with a REST API, authentication, and a relational schema handling concurrent bookings.</p>
+        <div class="chip-row small">
+          <span class="chip">React</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">PostgreSQL</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="text-link">Code →</a>
+          <a href="#" class="text-link">Live demo →</a>
+        </div>
+      </article>
+
+      <article class="project-card" data-cat="web">
+        <div class="project-top">
+          <span class="project-cat">web dev</span>
+          <span class="project-status">live</span>
+        </div>
+        <h3>[Project name — e.g. Internal Analytics Dashboard]</h3>
+        <p>A responsive dashboard consuming an internal API to visualize business metrics for a non-technical team.</p>
+        <div class="chip-row small">
+          <span class="chip">JavaScript</span>
+          <span class="chip">Chart.js</span>
+          <span class="chip">REST</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="text-link">Code →</a>
+          <a href="#" class="text-link">Live demo →</a>
+        </div>
+      </article>
+
+      <article class="project-card" data-cat="mlops">
+        <div class="project-top">
+          <span class="project-cat">mlops</span>
+          <span class="project-status">coursework</span>
+        </div>
+        <h3>[Project name — e.g. Feature Store for Tabular ML]</h3>
+        <p>A lightweight feature store with point-in-time correctness for training and serving parity, built as part of coursework.</p>
+        <div class="chip-row small">
+          <span class="chip">Python</span>
+          <span class="chip">Airflow</span>
+          <span class="chip">SQL</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="text-link">Code →</a>
+          <a href="#" class="text-link">Write-up →</a>
+        </div>
+      </article>
+
+      <article class="project-card" data-cat="web">
+        <div class="project-top">
+          <span class="project-cat">web dev</span>
+          <span class="project-status">archived</span>
+        </div>
+        <h3>[Project name — e.g. Portfolio CMS]</h3>
+        <p>A small content-managed site letting non-technical clients edit copy and images without touching code.</p>
+        <div class="chip-row small">
+          <span class="chip">JavaScript</span>
+          <span class="chip">HTML/CSS</span>
+          <span class="chip">Git</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="text-link">Code →</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- DEPLOY :: EXPERIENCE -->
+  <section class="stage-section stage-alt" id="deploy">
+    <div class="stage-header">
+      <span class="stage-tag">04 / deploy</span>
+      <h2>Where it's shipped so far</h2>
+      <p class="stage-desc">Education and work experience, in order.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <p class="timeline-date">2024 — Present</p>
+          <h3>M.Tech, Data Science &amp; AI</h3>
+          <p class="timeline-org">IIT Madras</p>
+          <p class="timeline-desc">Coursework and projects spanning machine learning, statistics, and applied MLOps, building on a software engineering foundation.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <p class="timeline-date">[Start] — [End]</p>
+          <h3>Software Engineer</h3>
+          <p class="timeline-org">[Company name]</p>
+          <p class="timeline-desc">[Describe your role — e.g. built and maintained web applications, contributed to internal tooling, worked with cross-functional teams.]</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <p class="timeline-date">2020 — 2024</p>
+          <h3>B.Tech, Computer Science &amp; Engineering</h3>
+          <p class="timeline-org">KIIT, Bhubaneswar</p>
+          <p class="timeline-desc">Foundational coursework in algorithms, systems, and software engineering.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVE :: CONTACT -->
+  <section class="stage-section stage-serve" id="serve">
+    <div class="stage-header">
+      <span class="stage-tag">05 / serve</span>
+      <h2>Ready to take a request</h2>
+      <p class="stage-desc">Open to data science, ML engineering and MLOps roles. The fastest path is email.</p>
+    </div>
+
+    <div class="serve-grid">
+      <form class="contact-form" id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required autocomplete="name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+
+      <div class="serve-links">
+        <a href="mailto:you@example.com" class="serve-link">
+          <span class="serve-link-label">email</span>
+          <span class="serve-link-val">you@example.com</span>
+        </a>
+        <a href="https://github.com/yourhandle" target="_blank" rel="noopener" class="serve-link">
+          <span class="serve-link-label">github</span>
+          <span class="serve-link-val">github.com/yourhandle</span>
+        </a>
+        <a href="https://linkedin.com/in/yourhandle" target="_blank" rel="noopener" class="serve-link">
+          <span class="serve-link-label">linkedin</span>
+          <span class="serve-link-val">linkedin.com/in/yourhandle</span>
+        </a>
+        <a href="#" class="serve-link">
+          <span class="serve-link-label">resume</span>
+          <span class="serve-link-val">download PDF</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> [Md Aminul Islam Rony]. Built with HTML, CSS &amp; JavaScript.</p>
+    <p class="footer-status"><span class="rail-dot small"></span> pipeline complete</p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
