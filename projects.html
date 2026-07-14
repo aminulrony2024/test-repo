@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Md. Aminul Islam Rony</title>
+<meta name="description" content="Selected projects by Md. Aminul Islam Rony spanning MLOps, machine learning and full-stack web development.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="index.html" class="brand">
+      <svg class="seal" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="30" cy="30" r="28" fill="none" stroke="#7A1F2B" stroke-width="1.5"/>
+        <circle cx="30" cy="30" r="23" fill="none" stroke="#9C7A2E" stroke-width="1"/>
+        <text x="30" y="36" text-anchor="middle" font-family="Fraunces, serif" font-size="16" fill="#7A1F2B" font-weight="600">AIR</text>
+      </svg>
+      <span class="brand-text">Md. Aminul Islam Rony<small>Data Science · IIT Madras</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html" data-page="index.html">Home</a></li>
+      <li><a href="about.html" data-page="about.html">About</a></li>
+      <li><a href="experience.html" data-page="experience.html">Experience</a></li>
+      <li><a href="projects.html" data-page="projects.html">Projects</a></li>
+      <li><a href="contact.html" data-page="contact.html">Contact</a></li>
+      <li><a href="https://drive.google.com/file/d/1URMf5X-MyYYsySYP_rUqmgkyk8toOMJb/view?usp=drive_link" target="_blank" rel="noopener" class="btn-resume">Resume</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="section" style="padding-top:56px;">
+    <div class="wrap">
+      <p class="eyebrow">Projects</p>
+      <h1 style="font-size:clamp(2rem,4vw,2.6rem);">Selected work</h1>
+      <p style="max-width:65ch; font-size:1.05rem; margin-top:18px;">
+        Three projects spanning end-to-end MLOps engineering, full-stack web development, and browser
+        automation tooling.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+
+      <div class="paper">
+        <span class="paper-ref">[1] MLOps · End-to-End ML System</span>
+        <h3>FinPredict — Intelligent Loan Approval System</h3>
+        <span class="paper-sub">XGBoost · FastAPI · React.js · MLflow · Apache Airflow · DVC · Docker · Prometheus · Grafana</span>
+        <span class="abstract-label">Abstract</span>
+        <p>
+          FinPredict tackles the problem of manual, inconsistent loan approval decisions in financial
+          institutions. An XGBoost classifier trained on 52,000 loan records predicts approval or
+          rejection from 24 applicant features, served through a FastAPI backend and a React frontend.
+          The full MLOps lifecycle is covered: DVC for two-version data tracking, MLflow for experiment
+          tracking and model registry, a 7-task Airflow DAG for pipeline orchestration, and Prometheus +
+          Grafana for real-time monitoring and drift detection — all containerized with Docker Compose.
+        </p>
+        <div class="metrics">
+          <div><strong>85.02%</strong>Accuracy</div>
+          <div><strong>88.84%</strong>F1-Score</div>
+          <div><strong>81.88%</strong>ROC-AUC</div>
+          <div><strong>&lt;50ms</strong>Latency</div>
+        </div>
+        <div class="paper-links">
+          <a href="https://github.com/aminulrony2024/DA5402-MLOPS-End-to-End-Project" target="_blank" rel="noopener">GitHub Repository →</a>
+          <span class="disabled">No live demo</span>
+        </div>
+      </div>
+
+      <div class="paper">
+        <span class="paper-ref">[2] Full-Stack · MERN</span>
+        <h3>KIIT International Student Portal</h3>
+        <span class="paper-sub">HTML5 · CSS3 · JavaScript · React.js · JWT · Node.js · Express.js · Firebase · MongoDB</span>
+        <span class="abstract-label">Abstract</span>
+        <p>
+          A platform designed to streamline the visa renewal process for international students at KIIT
+          University, facilitating communication and secure document exchange between students and the
+          International Relations Office (IRO) to prevent visa expiry fines. Implemented Firebase
+          Authentication for user management, a Node.js/Express.js backend for secure data storage and
+          communication with MongoDB, and digital document upload/management using Multer middleware.
+          Access control is secured with JWT-based authentication, and the system exposes RESTful APIs
+          for efficient data exchange between frontend and database.
+        </p>
+        <div class="paper-links">
+          <a href="https://kiit-iro-portal.web.app/" target="_blank" rel="noopener">Live Site →</a>
+          <a href="https://github.com/aminulrony2024/KIIT-INTERNATIONAL-STUDENT-PORTAL" target="_blank" rel="noopener">GitHub Repository →</a>
+        </div>
+      </div>
+
+      <div class="paper">
+        <span class="paper-ref">[3] Browser Automation</span>
+        <h3>AMT — Task Automation Extension</h3>
+        <span class="paper-sub">JavaScript · Chrome Extension APIs · HTML</span>
+        <span class="abstract-label">Abstract</span>
+        <p>
+          A browser extension built to automate task selection and acceptance for data-entry jobs on
+          microworkers.com. The extension removes the manual overhead of searching and accepting tasks,
+          letting users act on available jobs faster and focus their time on completing work rather than
+          hunting for it — built to run seamlessly across both desktop and mobile browsers.
+        </p>
+        <div class="paper-links">
+          <a href="https://github.com/aminulrony2024/amt-v.2024.3" target="_blank" rel="noopener">GitHub Repository →</a>
+          <span class="disabled">No live demo</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer">
+    <p>© <span id="year"></span> Md. Aminul Islam Rony. Built with HTML, CSS &amp; JavaScript.</p>
+    <ul class="footer-links">
+      <li><a href="https://github.com/aminulrony2024" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/aminulrony2024" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://scholar.google.com/citations?user=zDjHsXYAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a></li>
+      <li><a href="mailto:aminul.iitm@gmail.com">Email</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
