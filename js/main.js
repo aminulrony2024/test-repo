@@ -7,12 +7,27 @@ document.addEventListener('DOMContentLoaded', () => {
   // Mobile nav toggle
   const toggle = document.querySelector('.nav-toggle');
   const links = document.querySelector('.nav-links');
+  const header = document.querySelector('.site-header');
+
+  const setHeaderHeightVar = () => {
+    if (header) {
+      document.documentElement.style.setProperty('--header-h', header.offsetHeight + 'px');
+    }
+  };
+  setHeaderHeightVar();
+  window.addEventListener('resize', setHeaderHeightVar);
+
   if (toggle && links) {
     toggle.addEventListener('click', () => {
+      setHeaderHeightVar();
       links.classList.toggle('open');
+      document.body.classList.toggle('nav-open', links.classList.contains('open'));
     });
     links.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => links.classList.remove('open'));
+      a.addEventListener('click', () => {
+        links.classList.remove('open');
+        document.body.classList.remove('nav-open');
+      });
     });
   }
 
